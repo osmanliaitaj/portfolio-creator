@@ -1,0 +1,129 @@
+$qara: #000;
+$beyaz: #fff;
+$boz: #bbb;
+$tundBoz: #666;
+$narinci: #ff8a56;
+$font-family_1: Roboto;
+$background-tund: rgb(31, 29, 29);
+$background-qara: #000;
+$background-sheffaf: transparent;
+
+@import "reset.css";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: $qara;
+	font-size: 25px;
+	padding: 10px;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $background-tund;
+	width: 100%;
+	height: 100vh;
+	transform: scale(0);
+	overflow: hidden;
+}
+.overlay-active {
+	transform: scale(1);
+}
+.fa-xmark {
+	color: $beyaz;
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	font-size: 2rem;
+}
+.overlay-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	a {
+		font-size: 3.5rem;
+		color: $boz;
+		transition: .8s ease;
+		&:hover {
+			color: $beyaz;
+		}
+	}
+}
+.right-overlay {
+	color: $beyaz;
+}
+header {
+    //background-color: $background-tund;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 110.5px;
+	font-family: $font-family_1;
+}
+.fa-bars {
+	display: none;
+}
+.content {
+	display: flex;
+	justify-content: space-between;
+	padding: 4%;
+}
+.left-side {
+	flex-basis: 55%;
+}
+p {
+	font-size: 1rem;
+	line-height: 1.4rem;
+	color: $tundBoz;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+h1 {
+	font-family: $font-family_1;
+	font-weight: 700;
+	font-size: 72px;
+	padding-top: 5%;
+	line-height: 82px;
+	letter-spacing: 2px;
+	text-align: left;
+}
+span {
+	color: $narinci;
+}
+.right-side {
+	img {
+		width: 400px;
+	}
+}
+.Call {
+	background-color: $background-qara;
+	color: $beyaz;
+	padding: 12px 30px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+.Cv {
+	background-color: $background-sheffaf;
+	border: none;
+	padding: 12px 30px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+@media (max-width:768px) {
+	.header {
+		padding: 20px;
+	}
+	.nav-links {
+		display: none;
+	}
+	.fa-bars {
+		display: flex !important;
+	}
+}
