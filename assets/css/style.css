@@ -87,21 +87,100 @@ header {
     display: flex; 
     cursor: pointer;
   }
+
+  .introsection{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.projects-text-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-text-sectionn h6 {
+
+  display: flex ;
+  flex-direction: column;
+}
+
+.projects-card-section{
+  flex-direction: column;
+
+  padding: 0%;
+  padding-left: 0%;
+}
+
+
+
+.view-all-projects{
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.latest-blog-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-designer-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.pds-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.educationandwork{
+  display: flex ;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.work{
+  padding: 0%;
+}
+
+.projects-section{
+  padding: 0%;
+}
+
+.card .card-top img{
+  width: 100px;
+  height: 300px;
+}
+
+
+.card-top{
+  width: 100px;
+  padding: 0%;
+}
+
+
 }
 
 /* introsection */ 
 
 .introsection{
-  padding: 0 7.03rem;
+  
   display: flex;
   justify-content: space-between;
+  
   /* max-width: 1215px; */
 }
 
 .introsection > .intro-left-side {
   display: flex;
   flex-direction: column;
-  padding-top: 117px;
+  padding-left: 110px;
+  flex-basis: 60%;
+  /* padding-top: 117px; */
 }
 
 .introsection > .intro-left-side h1{ 
@@ -121,12 +200,13 @@ header {
   margin: 40px 0px;
 }
 
-.intro-right-side{
+/* .intro-right-side{
   padding-top: 70px;
-}
+} */
 
 .intro-right-side img{
-  width: 95%;
+  width: 100%;
+  height: 100%;
 }
 
 .intro-left-side .button-groups {
@@ -151,12 +231,13 @@ header {
 
 @media(max-width:1363px) {
   .introsection{
-    flex-direction: column;
+    
     padding: 0;
     flex-basis: 100%;
   }
   .intro-left-side h1 {
-   text-align: center;
+    padding: 0%;
+   /* text-align: center; */
   }
 
   .introsection small {
@@ -201,7 +282,7 @@ header {
   display: flex;
   justify-content: space-around;
   width: 70%;
-  padding: opx 40px;
+  padding: 10px 40px;
 }
 
 .trusted-by h1{
@@ -283,9 +364,6 @@ header {
   width: 32px;
 }
 
-/* .service p{
-  width: 80%;
-} */
 
 ul{
   list-style-position: inside;
@@ -328,7 +406,6 @@ ul{
 .projects-card-section{
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   padding: 10px;
 }
 
@@ -380,6 +457,7 @@ ul{
   background: #000;
   color: #fff;
   padding: 10px 12px;
+  cursor: pointer;
 }
 
 .projects-card-section .card + .card {
@@ -404,7 +482,7 @@ ul{
 }
 
 .blog{
-  padding: 40px 80px 40px 0;
+  padding: 30px 70px 30px 0;
   border-bottom: 1px solid #ddd;
   display: flex;
   flex-direction: column;
@@ -475,18 +553,18 @@ ul{
   display: flex;
   flex-direction: column;
   padding: 40px;
+  margin: 40px;
 }
 
 .product-design-section-text{
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  margin: 40px;
 }
 
 .product-design-section-text .left-side{
-  flex-basis: 30%;
   text-align: center;
-  padding: 40px;
+  flex-basis: 30%;
 }
 
 .product-design-section-text .left-side h4{
@@ -510,25 +588,27 @@ ul{
   font-weight: 400;
   color: #666;
   line-height: 30px;
+
 }
 
 .pds-image{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+ margin: 10px;
 }
 
 .pds-image .left-side{
  width: 338px;
  height: 626px;
  min-width: 250px;
+ margin-right: 16px;
+
  
 }
 
 .pds-image .left-side img{
   width: 100%;
   height: 100%;
-  padding: 10px;
   object-fit: cover;
 }
 
@@ -541,7 +621,6 @@ ul{
 .pds-image .center img{
   width: 100%;
   height: 100%;
-  padding: 10px;
   object-fit: cover;
 }
 
@@ -549,33 +628,29 @@ ul{
   height: 626px;
   width: 338px;
   min-width: 250px;
+  margin-left: 16px;
 }
 
 .right-side .rs-top{
   width: inherit;
   height: 305px;
-  padding: 10px;
+  margin-bottom: 16px;
 }
 
 .right-side .rs-top img{
   width: 100%;
   height: 100%;
-  flex-direction: column;
-  display: flex;
   object-fit: cover;
 }
 
 .right-side .rs-bottom{
   width: inherit;
   height: 305px;
-  padding: 10px;
 }
 
 .right-side .rs-bottom img{
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   object-fit: cover;
 } 
 
@@ -604,7 +679,7 @@ flex: 1;
   border-bottom: 1px solid  #E5E5E5;
   display: flex;
   flex-direction: column;
-  padding: 50px ;
+  padding: 40px ;
 }
 
 .university small{
@@ -636,7 +711,6 @@ flex: 1;
 }
 
 .metadata{
-  margin-right: 30px;
   font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
@@ -668,7 +742,7 @@ flex: 1;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #E5E5E5;
-  padding: 50px;
+  padding: 40px;
 }
 
 .work-top{
@@ -695,5 +769,77 @@ flex: 1;
 
 
 
-
+/* Testimonials */
   
+
+.Testimonials-section{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.testimonials-and-text{
+  display: flex;
+}
+
+.Testimonials-section .left-side img{
+ padding-left: 30px;
+}
+
+.Testimonials-section .right-side{
+ padding-top: 40px;
+ 
+}
+
+.right-side-bottom{
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.right-side-test small{
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 70px;
+}
+
+.bottom-top{
+  font-weight: 700;
+  font-size: 20px;
+  font-family: Roboto;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.word{
+  padding: 30px;
+}
+
+.word h4{
+color:  #4353FF;
+font-weight: 700;
+font-family: Roboto;
+font-size: 22px;
+line-height: 22px;
+}
+
+.word h2{
+  font-size: 54px;
+  padding-top: 20px;
+  font-weight: 700;
+  font-family: Roboto;
+  line-height: 59.4px;
+}
+
+
+.testimonials-and-text .right-side{
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
+}
+
+.testimonials-and-text .right-side small{
+  font-size: 34px;
+  line-height: 40px;
+}
