@@ -187,7 +187,6 @@ header {
 
 .trusted-by h1{
   display: flex;
- 
 }
 
 .slide{
@@ -742,47 +741,6 @@ line-height: 22px;
   line-height: 40px;
 }
 
-/* Faq */
-
-/* .faq-section {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  background-color: #000;
-  padding-top: 20px;
-}
-
-
-.faq-section h5 {
-  text-align: center;
-  color:#FF8A56;
-  font-size: 22px;
-}
-
-.faq-section h1 {
-  text-align: center;
-  color: #fff;
-  font-size: 44px;
-  font-weight: 700;
-  padding-top: 20px;
-
-}
-
-.faq-text-section {
-display: flex;
-justify-content: space-around;
-padding-top: 12px;
-}
-
-.faq-text-section .blog {
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-} */
-
-
-
-
 
 
 .faq-section {
@@ -843,21 +801,13 @@ padding-top: 12px;
 }
 
 .portfolio{
-  
   padding-left: 22px;
 }
 
 .info-left small{
-  padding-left: 17px;
+  color: #666;
+  padding-left: 20px;
 }
-
-
-.info-bottom{
-  display: flex;
-
-  padding-top: 150px;
-}
-
 
 .info .info-top h1{
   color: #fff;
@@ -865,53 +815,75 @@ padding-top: 12px;
   font-weight: 700;
 }
 
-/* * {
-  outline: 1px solid red;
-} */
-
 .info .info-top h2{
   color: #3C46FF;
   font-size: 54px;
   font-weight: 700;
 }
 
+.info-bottom{
+  display: flex;
+  padding-top: 194px;
+}
+
+
+
+/* * {
+  outline: 1px solid red;
+} */
+
 .info-left p{
   color: #666;
   padding-left: 20px;
 }
 
-.info-left small{
-  color: #666;
-  padding-left: 20px;
+.info-right a{
+  color: #fff;
+  padding: 15px;
 }
 
 
 
-
-
-
-
-.info-right a{
+.info-right-left .info-right-center .info-right-last a{
 color: #fff;
-padding: 27px 45px;
-font-weight: bolder;
+padding: 12px;
+display: flex;
+flex-direction: column;
 cursor: pointer;
 }
 
 .info-right{
   display: flex;
-  width: 1038px; 
-  flex: 1;
-  justify-content: space-between;
-  justify-content: flex-end;
-  padding-right: 100px;
+ padding: 12px;
+ flex-basis: 60%;
+ flex-direction: column;
+ justify-content: space-evenly;
+  
 } 
 
+.info-right-center{
+  padding: 32px;
+  padding-left: 170px;
+}
 
+.info-right-left{
+  padding: 20px;
+  padding-left: 170px;
+}
+
+.info-right-bottom{
+  padding: 32px;
+  padding-left: 170px;
+}
+
+
+ .info-bottom .info-left{
+  padding-top: 50px;
+}
 
 
 .info-last{
-  justify-content: space-between;
+padding: 12px;
 }
 
 .info-work abbr{
@@ -969,7 +941,7 @@ color: #fff;
 
 
 
-@media(max-width:768px) { 
+@media(max-width:768px) {  
   .header{ 
     padding: 20px;
   } 
@@ -1149,6 +1121,7 @@ color: #fff;
 
 .introsection > .intro-left-side h1{
   font-size: 44px;
+  padding-left: 100px;
 }
 
 
@@ -1186,8 +1159,23 @@ color: #fff;
   text-align: center;
 }
 
+
+.introsection > .intro-left-side small{
+  font-size: 15px;
+
 }
 
+.intro-left-side .button-groups {
+padding-left: 100px;
+
+}
+
+.product-design-section-text{
+  display: flex;
+  flex-direction: column;
+}
+
+}
 
 @media(max-width:1363px) {
   .introsection{
