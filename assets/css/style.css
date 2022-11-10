@@ -971,10 +971,20 @@ padding-top: 50pxpx;
     flex-direction: column;
     padding: 0;
     margin: 0;
+    align-items: center;
   }
 
   .projects-card-section .card+.card{
     margin: 0;
+  }
+
+  .pds-image .center img{
+    padding-right: 20px;
+  }
+
+  .faq-section{
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .product-designer-section{
@@ -982,11 +992,18 @@ padding-top: 50pxpx;
   }
   .product-design-section-text .right-side{
     flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    padding-left: 70px;
   }
 
   .educationandwork{
     display: flex;
     flex-direction: column;
+  }
+
+  .projects-text-section{
+    padding: 30px;
   }
 
 
@@ -1000,6 +1017,15 @@ padding-top: 50pxpx;
   .pds-image .right-side{
     margin: 0;
   }
+
+
+  .projects-section h6{
+    text-align: center;
+    width: auto;
+    font-size: 20px;
+  }
+
+
 
   .word h4{
     padding-top: 20px;
@@ -1033,6 +1059,21 @@ padding-top: 50pxpx;
     margin: 0;
   }
 
+  .product-design-section-text .left-side{
+    padding: 0;
+    text-align: center;
+  }
+
+  .product-design-section-text .left-side h4{
+    text-align: center;
+    padding-left: 60px;
+  }
+
+  .product-design-section-text .left-side h2{
+    text-align: center;
+    padding-left: 60px;
+  }
+
   .trusted{
     font-size: 20px;
   }
@@ -1047,6 +1088,13 @@ padding-top: 50pxpx;
 
   .latest-blog-section .right-side{
     padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .latest-blog-section .left-side{
+    text-align: center;
   }
 
 
@@ -1105,8 +1153,10 @@ padding-top: 50pxpx;
 }
 
 .view-all-projects pre{
-  font-size: 40px;
-  padding-right: 28px;
+  font-size: 35px;
+  padding-left: 22px;
+  text-align: center;
+  padding-top: 25px;
 }
 
 .introsection > .intro-left-side{
@@ -1117,7 +1167,7 @@ padding-top: 50pxpx;
 .introsection > .intro-left-side h1{
   font-size: 44px;
   text-align: center;
-  
+  padding-top: 25px;
 }
 
 
@@ -1127,6 +1177,12 @@ padding-top: 50pxpx;
 
 .word{
   padding: 0;
+  text-align: center;
+}
+
+
+.card .card-bottom{
+  text-align: center;
 }
 
 
@@ -1148,15 +1204,15 @@ padding-top: 50pxpx;
 .introsection > .intro-left-side small{
   font-size: 15px;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 25px;
 
 }
 
 
 .intro-left-side .button-groups {
 text-align: center;
-padding-top: 15px;
-
+padding-top: 30px;
+padding-left: 120px;
 }
 
 .product-design-section-text{
@@ -1171,10 +1227,15 @@ padding-top: 15px;
   padding: 0;
 }
 
+
+.footer-left{
+  text-align: center;
+}
+
 .footer-right{
-  padding: 0;
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  padding-top: 30px;
   width: 0;
   cursor: pointer;
 }
@@ -1189,6 +1250,10 @@ padding-top: 15px;
 
 .footer-bottom{
   padding: 0;
+}
+
+.footer-text{
+  text-align: center;
 }
 
 .footer-line{
@@ -1209,6 +1274,11 @@ padding-top: 15px;
 
 .info-work p{
   padding-top: 10px;
+}
+
+.info-last{
+  padding-top: 30px;
+  text-align: center;
 }
 
 
