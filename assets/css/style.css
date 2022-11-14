@@ -1095,6 +1095,7 @@ padding-top: 50pxpx;
 
   .latest-blog-section .left-side{
     text-align: center;
+    padding-top: 35px;
   }
 
 
@@ -1103,6 +1104,15 @@ padding-top: 50pxpx;
     flex-direction: column;
     padding: 0;
     margin: 0;
+  }
+
+  .services > h1{
+    font-size: 15px;
+  }
+
+  .service{
+    padding: 0;
+    padding-top: 45px;
   }
 
   .services h6{
@@ -1161,7 +1171,8 @@ padding-top: 50pxpx;
 
 .introsection > .intro-left-side{
   padding: 0;
-  text-align: center;
+  align-items: center;
+  margin: 0;
 }
 
 .introsection > .intro-left-side h1{
@@ -1208,12 +1219,11 @@ padding-top: 50pxpx;
 
 }
 
-
-.intro-left-side .button-groups {
-text-align: center;
-padding-top: 30px;
-padding-left: 120px;
+.intro-left-side .button-groups{
+  padding-top: 30px;
 }
+
+
 
 .product-design-section-text{
   display: flex;
